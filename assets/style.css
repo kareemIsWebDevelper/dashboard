@@ -1,0 +1,82 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    gap: 30px;
+    justify-items: center;
+    align-content: center;
+    padding: 20px;
+}
+
+#flex {
+display: flex;
+}
+
+#header { text-align: center; }
+#header img{ width: 50px; height: 20px; }
+
+#header h1 { color: grey; font-weight: 300;}
+#header span { color: black; font-weight: 700;}
+
+#main {display: grid; justify-items: center; align-content: center; margin: auto;}
+
+
+#main input{ border: 1px solid lightgrey; width: 300px; height:30px; border-radius: 30px; text-indent: 20px;}
+
+#main #button{
+    border: none; width: 150px; height: 35px; border-radius: 30px; color: white; background-color: blue; 
+    cursor: pointer;
+}
+
+#inner {
+    margin-left: 20px;
+    font-size: 13px;
+    color: red;
+    visibility: hidden;
+}
+
+#main img{ width: 400px; height:250px; }
+
+
+#footer {
+    text-align: center;
+}
+
+#footer p{ font-size: 12px; color: lightgrey;}
+ul { display: flex; margin-left: 10px;}
+
+a { color: blue;}
+
+li {
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+li:hover {
+    background-color: blue;
+}
+li:hover a {
+    color: white;}
+
+    i { font-size: 15px;}
+
+    @media screen and (max-width: 400px) {
+        #main img {
+            width: 300px;
+            height: 250px;
+        }
+
+        #flex {
+            display: grid;
+            place-items: center;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+    }
